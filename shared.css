@@ -111,13 +111,16 @@ main {
   color: white;
   border-bottom: 5px solid white;
 }
-
+.main-nav__item--cta{
+  animation: wiggle 200ms 3s 8 none;
+}
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
   color: white;
   background: #ff1b68;
   padding: 0.5rem 1rem;
   border-radius: 8px;
+
 }
 
 .main-nav__item--cta a:hover,
@@ -239,6 +242,7 @@ main {
 
 .open {
     display: block !important;
+    
 }
 
 @media (min-width: 40rem) {
@@ -257,5 +261,17 @@ main {
   justify-content: center;
 }
 
+}
+@keyframes wiggle{
+  0%{
+transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(-10deg);
+
+  }
+  100%{
+transform: rotateZ(10deg);
+  }
 }
  
